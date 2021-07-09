@@ -3,17 +3,17 @@ package polymorphism;
 public class TVUserPolymorphism {
 	public static void main(String[] args) {
 
-		TV tv = new SamsungTV();
+		TV tv = new SamsungTV();  // 자동형 변환, 인터페이스 = 구현 객체
 		tv.powerOn();
 		tv.volumeUp();
 		tv.volumeDown();
 		tv.powerOff();
 
-		TV tv1 = new LgTV();
-		tv1.powerOn();
-		tv1.volumeUp();
-		tv1.volumeDown();
-		tv1.powerOff();
+		tv = new LgTV();
+		tv.powerOn();
+		tv.volumeUp();
+		tv.volumeDown();
+		tv.powerOff();
 
 	}
 }

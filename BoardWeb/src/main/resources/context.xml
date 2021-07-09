@@ -17,7 +17,7 @@
 	<bean id="sony" class="polymorphism.SonySpeaker"></bean>
 	<bean id="apple" class="polymorphism.AppleSpeaker"></bean>
 	
-	<!-- <context:component-scan base-package="polymorphism" />
+	<!-- <context:component-scan base-package="polymorphism" /> -->
 	
 	<bean id="collectionBean" class="com.springbook.ioc.injection.CollectionBean">
 		<property name="addressList">
@@ -26,7 +26,7 @@
 				<value>서울시 성동구 행당동</value>
 			</list>
 		</property>
-	</bean> -->
+	</bean>
 	
 	<!-- lab end -->
 

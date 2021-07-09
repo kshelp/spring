@@ -8,6 +8,7 @@ public class TVUserCoupling {
 		tv.volumeDown();
 		tv.powerOff();
 
+		//tv = new LgTVCoupling();
 		LgTVCoupling tv1 = new LgTVCoupling();
 		tv1.turnOn();
 		tv1.soundUp();

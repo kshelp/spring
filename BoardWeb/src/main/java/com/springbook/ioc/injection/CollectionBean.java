@@ -12,3 +12,6 @@ public class CollectionBean {
         return addressList;
     }
 }
+
+
+// CollectionBean collectionBean = new CollectionBean();
