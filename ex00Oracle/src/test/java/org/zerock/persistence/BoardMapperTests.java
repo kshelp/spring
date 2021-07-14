@@ -1,5 +1,7 @@
 package org.zerock.persistence;
 
+import javax.inject.Inject;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,13 +18,17 @@ import lombok.extern.log4j.Log4j;
 @Log4j
 public class BoardMapperTests {
 
-	@Setter(onMethod_ = @Autowired)
+	//@Setter(onMethod_ = @Autowired)
+	@Inject
 	private BoardMapper boardMapper;
 
 	@Test
 	public void selectBoardList() throws Exception {
+		System.out.println("*** before");
 		log.info("/* "+boardMapper.getClass().getName());
 		log.info("/* boardMapper.selectBoardList()="+boardMapper.selectBoardList());
+		System.out.println("*** after");
+		
 	}
 
 }
