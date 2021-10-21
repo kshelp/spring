@@ -46,12 +46,12 @@ public class SamsungTV implements TV {
 	}
 
 	public void volumeUp() {
-		//speaker.volumeUp();
-		System.out.println("SamsungTV---소리 올린다.");
+		speaker.volumeUp();
+		//System.out.println("SamsungTV---소리 올린다.");
 	}
 
 	public void volumeDown() {
-		//speaker.volumeDown();
-		System.out.println("SamsungTV---소리 내린다.");
+		speaker.volumeDown();
+		//System.out.println("SamsungTV---소리 내린다.");
 	}
 }

@@ -6,8 +6,9 @@ import org.springframework.stereotype.Component;
 @Component("tv")
 public class LgTV implements TV {
 	@Autowired
-	//@Qualifier("apple")
-	//@Resource(name = "apple")
+	//@Inject
+	//@Qualifier("sony")
+	//@Resource(name = "sony")
 	private Speaker speaker;
 
 	public LgTV() {
@@ -23,12 +24,12 @@ public class LgTV implements TV {
 	}
 
 	public void volumeUp() {
-		//speaker.volumeUp();
-		System.out.println("LgTV---소리 올린다.");
+		speaker.volumeUp();
+		//System.out.println("LgTV---소리 올린다.");
 	}
 
 	public void volumeDown() {
-		//speaker.volumeDown();
-		System.out.println("LgTV---소리 내린다.");
+		speaker.volumeDown();
+		//System.out.println("LgTV---소리 내린다.");
 	}
 }

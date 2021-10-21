@@ -8,16 +8,22 @@
 
 
 	<!-- lab begin -->
-    <!-- <bean id="tv" class="polymorphism.SamsungTV">
+	<!--  
+    <bean id="tv" class="polymorphism.SamsungTV">
 		<constructor-arg index="0" ref="apple"></constructor-arg>
-		<constructor-arg index="1" value="27000000"></constructor-arg>
+		<constructor-arg index="1" value="27000000"></constructor-arg> 
+		<property name="speaker" ref="sony"></property>
+		<property name="price" value="27000000"></property> 
 	</bean> -->
-	<bean id="tv" class="polymorphism.SamsungTV" p:speaker-ref="apple" p:price="28000"/>
+	
+	<!-- <bean id="tv" class="polymorphism.SamsungTV" 
+		p:speaker-ref="apple" 
+		p:price="28000" init-method="initMethod" lazy-init="true"/> -->
 	
 	<bean id="sony" class="polymorphism.SonySpeaker"></bean>
-	<bean id="apple" class="polymorphism.AppleSpeaker"></bean>
+	<!-- <bean id="apple" class="polymorphism.AppleSpeaker"></bean> -->
 	
-	<!-- <context:component-scan base-package="polymorphism" /> -->
+	<context:component-scan base-package="polymorphism" />
 	
 	<bean id="collectionBean" class="com.springbook.ioc.injection.CollectionBean">
 		<property name="addressList">
